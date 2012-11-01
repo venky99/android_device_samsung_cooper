@@ -33,8 +33,4 @@ BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/cooper/recovery/recover
 BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/cooper/recovery/graphics.c
 TARGET_RECOVERY_INITRC := device/samsung/cooper/recovery/recovery.rc
 TARGET_RECOVERY_FSTAB := device/samsung/cooper/recovery/recovery.fstab
-
-# Board has 5MP Camera
-BOARD_CAMERA_5MP := true
-COMMON_GLOBAL_CFLAGS += -DSAMSUNG_CAMERA_QCOM
-
+TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/cooper/recovery/recovery_kernel
