@@ -30,10 +30,6 @@ PRODUCT_PACKAGES += \
     camera.cooper \
     LegacyCamera
 
-## Liblights
-#PRODUCT_PACKAGES += \
-#    lights.cooper
-
 ## Wifi
 PRODUCT_PACKAGES += \
     abtfilt \
