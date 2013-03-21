@@ -22,16 +22,16 @@ DEVICE_PACKAGE_OVERLAYS := device/samsung/cooper/overlay
 
 ## Camera
 PRODUCT_PACKAGES += \
-    camera.cooper
+    camera.msm7x27
 
 ## Audio
 PRODUCT_PACKAGES += \
-   audio.primary.cooper \
-   audio_policy.cooper
+   audio.primary.msm7x27 \
+   audio_policy.msm7x27
 
 ## Lights
-#PRODUCT_PACKAGES += \
-#   lights.cooper
+PRODUCT_PACKAGES += \
+   lights.msm7x27
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
