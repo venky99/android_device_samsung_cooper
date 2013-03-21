@@ -51,17 +51,25 @@ dalvik.vm.heapstartsize=5m
 dalvik.vm.heapgrowthlimit=32m	
 dalvik.vm.heapsize=64m
 dalvik.vm.execution-mode=int:jit
-dalvik.vm.dexopt-data-only=1
-dalvik.vm.verify_bytecode=false
-dalvik.vm.checkjni=0
+#dalvik.vm.dexopt-data-only=1
 
 ## USB
 persist.sys.usb.config=adb,mass_storage
 persist.service.adb.enable=1
 ro.vold.umsdirtyratio=20
 
+# Fix color banding
+persist.sys.use_dithering=1
+
 ## Camcorder
 debug.camcorder.disablemeta=1
+ro.product.camera=msm7x27
+
+# Allow purging of asset bitmaps
+persist.sys.purgeable_assets=1
+
+# Allow up to 5hidden apps
+sys.mem.max_hidden_apps=5
 
 ## Force Launcher into memory
 ro.HOME_APP_ADJ=1
