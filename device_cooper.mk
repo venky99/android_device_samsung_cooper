@@ -13,8 +13,7 @@
 # limitations under the License.
 
 ## Inherit vendor proprietary files
-$(call inherit-product, vendor/samsung/cooper/vendor_blobs.mk)
-
+include vendor/samsung/cooper/vendor_blobs.mk
 include device/samsung/msm7x27-common/common.mk
 
 ## Device specific overlay
