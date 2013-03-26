@@ -36,7 +36,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/samsung/msm7x27-common/ramdisk/init.device.rc:root/init.gt-s5830board.rc \
     device/samsung/msm7x27-common/ramdisk/init.device.usb.rc:root/init.gt-s5830board.usb.rc \
-    device/samsung/msm7x27-common/ueventd.device.rc:root/ueventd.gt-s5830board.rc \
+    device/samsung/msm7x27-common/ramdisk/ueventd.device.rc:root/ueventd.gt-s5830board.rc \
     device/samsung/cooper/ramdisk/COOPER.rle:root/COOPER.rle
 
 ## LDPI assets
