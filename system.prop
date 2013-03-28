@@ -38,9 +38,30 @@ persist.sys.usb.config=mass_storage,adb
 persist.service.adb.enable=1
 ro.vold.umsdirtyratio=20
 
+# Memory
+persist.sys.purgeable_assets=1
+
+## Memory
+sys.mem.max_hidden_apps=10
+
+sys.mem.FOREGROUND_APP_ADJ=0
+sys.mem.VISIBLE_APP_ADJ=3
+sys.mem.PERCEPTIBLE_APP_ADJ=6
+sys.mem.BACKUP_APP_ADJ=10
+sys.mem.HIDDEN_APP_MIN_ADJ=12
+sys.mem.HIDDEN_APP_MAX_ADJ=15
+
+sys.mem.FOREGROUND_APP_MEM=8192
+sys.mem.VISIBLE_APP_MEM=12288
+sys.mem.PERCEPTIBLE_APP_MEM=30720
+sys.mem.BACKUP_APP_MEM=36864
+sys.mem.HIDDEN_APP_MIN_MEM=41984
+sys.mem.HIDDEN_APP_MAX_MEM=48128# Memory
+persist.sys.purgeable_assets=1
+
 # Dalvik
 dalvik.vm.lockprof.threshold=500
-dalvik.vm.dexopt-flags=m=y
+dalvik.vm.dexopt-flags=v=a,o=v,m=y,u=y
 dalvik.vm.heapstartsize=5m
 dalvik.vm.heapgrowthlimit=24m
 dalvik.vm.heapsize=64m
