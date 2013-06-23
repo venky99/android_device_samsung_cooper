@@ -13,8 +13,7 @@
 # limitations under the License.
 
 ## Inherit vendor proprietary files
-$(call inherit-product, vendor/samsung/cooper/vendor_blobs.mk)
-
+include vendor/samsung/cooper/vendor_blobs.mk
 include device/samsung/msm7x27-common/common.mk
 
 ## Device specific overlay
@@ -22,22 +21,22 @@ DEVICE_PACKAGE_OVERLAYS := device/samsung/cooper/overlay
 
 ## Camera
 PRODUCT_PACKAGES += \
-    camera.cooper
+    camera.msm7x27
 
 ## Audio
 PRODUCT_PACKAGES += \
-   audio.primary.cooper \
-   audio_policy.cooper
+   audio.primary.msm7x27 \
+   audio_policy.msm7x27
 
 ## Lights
-#PRODUCT_PACKAGES += \
-#   lights.cooper
+PRODUCT_PACKAGES += \
+   lights.msm7x27
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/cooper/ramdisk/init.gt-s5830board.rc:root/init.gt-s5830board.rc \
-    device/samsung/cooper/ramdisk/init.gt-s5830board.usb.rc:root/init.gt-s5830board.usb.rc \
-    device/samsung/cooper/ramdisk/ueventd.gt-s5830board.rc:root/ueventd.gt-s5830board.rc \
+    device/samsung/msm7x27-common/ramdisk/init.device.rc:root/init.gt-s5830board.rc \
+    device/samsung/msm7x27-common/ramdisk/init.device.usb.rc:root/init.gt-s5830board.usb.rc \
+    device/samsung/msm7x27-common/ramdisk/ueventd.device.rc:root/ueventd.gt-s5830board.rc \
     device/samsung/cooper/ramdisk/COOPER.rle:root/COOPER.rle
 
 ## LDPI assets
